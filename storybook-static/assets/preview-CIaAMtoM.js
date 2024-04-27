@@ -1,0 +1,1 @@
+import{t as a}from"./index-C8BcKvBg.js";import"./index-Dh25_VVa.js";const t={parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}},darkMode:{dark:{...a.dark,appBg:"black"},light:{...a.normal,appBg:"#fff"}}}};export{t as default};
