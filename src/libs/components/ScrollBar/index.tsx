@@ -6,13 +6,13 @@ const ScrolBar: React.FC<{
   content: React.ReactNode,
   barStyle?: CSSProperties
 }> = ({
-  autoHide = false,
+  autoHide,
   content,
   barStyle = { width: 500, height: 300 }
 }) => {
     return (
       <Scrollbars
-        autoHide={autoHide}
+        autoHide={!!autoHide}
         style={barStyle}
       >
         {content}
