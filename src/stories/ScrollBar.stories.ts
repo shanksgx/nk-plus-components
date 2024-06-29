@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { ScrollBar } from './ScrollBar';
+import { ScrollBar } from '@/lib/main';
 
 const meta = {
   title: 'Example/ScrollBar',
@@ -9,10 +9,6 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    autoHide: {
-      control: 'boolean',
-      description: '是否自动隐藏滚动条'
-    },
     barStyle: {
       control: 'object',
       description: '滚动条样式',
@@ -26,10 +22,10 @@ type Story = StoryObj<typeof meta>;
 
 export const ScrolBarTest: Story = {
   args: {
-    autoHide: true,
     barStyle:{
       width: 500,
       height: 300
-    }
+    },
+    children: undefined
   },
 };

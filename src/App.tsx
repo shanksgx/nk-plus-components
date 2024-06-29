@@ -1,6 +1,6 @@
 import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
-import { ScrollBar, CustomButton, WaterMark, SchamasForm } from "@/lib/main.ts";
+import { CustomButton, WaterMark, SchamasForm, ScrollBar } from "@/lib/main.ts";
 import { Typography, Divider, Button } from "@arco-design/web-react";
 import { IconSync } from "@arco-design/web-react/icon";
 import styled from "styled-components";
@@ -60,17 +60,13 @@ function App() {
             borderBottomStyle: "dotted",
           }}
         />
-        <ScrollBar
-          autoHide={true}
-          barStyle={barStyle}
-          content={
-            <ScrollBox>
-              <Title type="primary" underline heading={6}>
-                This is ScrollBar components...
-              </Title>
-            </ScrollBox>
-          }
-        />
+        <ScrollBar>
+          <ScrollBox>
+            <Title type="primary" underline heading={6}>
+              This is ScrollBar components...
+            </Title>
+          </ScrollBox>
+        </ScrollBar>
         <Divider
           style={{
             borderBottomWidth: 2,
@@ -114,17 +110,11 @@ function App() {
 }
 
 const ScrollBox = styled.span`
-  width: 510px;
+  width: 550px;
   height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
-const barStyle = {
-  margin: "0 auto",
-  width: 500,
-  height: 300,
-  border: "1px solid #181818",
-};
 
 export default App;

@@ -1,23 +1,19 @@
 import React, { CSSProperties } from "react"
-import { Scrollbars } from 'rc-scrollbars'
+import { ScrollArea, ScrollBar as ScrollBarIn } from "@/components/ui/scroll-area";
 
-const ScrolBar: React.FC<{
-  autoHide?: boolean,
-  content: React.ReactNode,
+const ScrollBar: React.FC<{
+  children: React.ReactNode,
   barStyle?: CSSProperties
 }> = ({
-  autoHide,
-  content,
+  children,
   barStyle = { width: 500, height: 300 }
 }) => {
     return (
-      <Scrollbars
-        autoHide={!!autoHide}
-        style={barStyle}
-      >
-        {content}
-      </Scrollbars>
+      <ScrollArea style={barStyle} className="nk-mx-auto nk-border nk-rounded-md">
+        {children}
+        <ScrollBarIn orientation="horizontal" />
+      </ScrollArea>
     )
   }
 
-export default ScrolBar
+export default ScrollBar
