@@ -12,7 +12,7 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/libs/main.ts"),
+      entry: path.resolve(__dirname, "src/lib/main.ts"),
       name: "nk-plus-components",
       fileName: (format) => `nk-plus-components.${format}.js`,
     },

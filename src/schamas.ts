@@ -1,4 +1,4 @@
-import type { FormSchema } from "./libs/main";
+import type { FormSchema } from "./lib/main";
 
 export const schemas: FormSchema[] = [
   {

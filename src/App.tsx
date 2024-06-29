@@ -1,15 +1,14 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { ScrollBar, CustomButton, WaterMark } from "./libs/main";
+import reactLogo from "@/assets/react.svg";
+import { ScrollBar, CustomButton, WaterMark, SchamasForm } from "@/lib/main.ts";
 import { Typography, Divider, Button } from "@arco-design/web-react";
 import { IconSync } from "@arco-design/web-react/icon";
 import styled from "styled-components";
-import { SchamasForm } from "./libs/main";
 import { Form } from "@arco-design/web-react";
-import { schemas } from "./schamas";
-import Shadcn from './Shadcn.tsx'
+import { schemas } from "@/schamas";
+import Shadcn from '@/Shadcn.tsx'
 import { Toaster } from "@/components/ui/sonner"
-import "./App.less";
+import "@/App.less";
 
 const { Title } = Typography;
 

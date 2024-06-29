@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import waterMarkBase64Url from "../../utils/waterMarkBase64Url";
+import waterMarkBase64Url from "@/lib/waterMarkBase64Url";
 
 export type Iocontent = {
   text?: string;
