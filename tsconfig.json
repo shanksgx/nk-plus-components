@@ -11,7 +11,7 @@
         "./src/*"
       ]
     },
-    "types": ["jest", "node"],
+    "types": ["vitest/jsdom"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
