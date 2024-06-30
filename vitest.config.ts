@@ -9,6 +9,7 @@ export default defineConfig({
     },  
   },
   test: {
+    include: ['**/*.{test,spec}.?(c|m)[jt]s?(x)', '_nk_test_/**/*.{test,spec}.?(c|m)[jt]s?(x)'],
     environment: 'jsdom', // or 'happy-dom', 'node'
     // reporters: ['json'], // 报告器
     coverage: {
