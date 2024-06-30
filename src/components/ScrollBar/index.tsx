@@ -2,7 +2,7 @@ import React, { CSSProperties } from "react"
 import { ScrollArea, ScrollBar as ScrollBarIn } from "@/components/ui/scroll-area";
 
 const ScrollBar: React.FC<{
-  children: React.ReactNode,
+  children?: React.ReactNode,
   barStyle?: CSSProperties
 }> = ({
   children,
@@ -10,7 +10,7 @@ const ScrollBar: React.FC<{
 }) => {
     return (
       <ScrollArea style={barStyle} className="nk-mx-auto nk-border nk-rounded-md">
-        {children}
+        <div>{children || 'hello world'}</div>
         <ScrollBarIn orientation="horizontal" />
       </ScrollArea>
     )

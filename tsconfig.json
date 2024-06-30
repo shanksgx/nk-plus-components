@@ -11,6 +11,7 @@
         "./src/*"
       ]
     },
+    "types": ["jest", "node"],
 
     /* Bundler mode */
     "moduleResolution": "bundler",
