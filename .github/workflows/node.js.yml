@@ -33,4 +33,4 @@ jobs:
       with:
         node-version: "20"
     - name: pnpm test
-      run: pnpm run test
+      run: pnpm test
