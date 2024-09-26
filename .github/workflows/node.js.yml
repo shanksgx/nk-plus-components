@@ -8,21 +8,19 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
+
   workflow_dispatch:
-  
+
 jobs:
   install:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v4
       with:
         node-version: "20"
     - name: Use Node.js 20.x install
-    - run: npm install -g pnpm && pnpm install
+      run: npm install -g pnpm && pnpm install
 
 
   test:
@@ -35,4 +33,4 @@ jobs:
       with:
         node-version: "20"
     - name: pnpm test
-    - run: pnpm run test
+      run: pnpm run test
