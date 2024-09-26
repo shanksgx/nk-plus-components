@@ -20,17 +20,5 @@ jobs:
       with:
         node-version: "20"
     - name: Use Node.js 20.x install
-      run: npm install -g pnpm && pnpm install
+      run: npm install -g pnpm && pnpm install && pnpm test
 
-
-  test:
-    runs-on: ubuntu-latest
-
-    
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-    - name: pnpm test
-      run: pnpm test
